@@ -36,10 +36,12 @@ BANK_FUNCTIONS = {
 
 conn = MongoClient(MONGO_URL)
 
+account_access_consents = conn.NatWest.account_access_consents
+account_auth_tokens = conn.NatWest.account_auth_tokens
 accounts = conn.NatWest.accounts
 transactions = conn.NatWest.transactions
 beneficiaries = conn.NatWest.beneficiaries
-balances =  conn.NatWest.balances
+balances = conn.NatWest.balances
 direct_debits = conn.NatWest.direct_debits
 standing_orders = conn.NatWest.standing_orders
 products = conn.NatWest.products
